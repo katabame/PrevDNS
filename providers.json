@@ -1,0 +1,21 @@
+{
+    "block": [
+        {
+            "name": "AdAway Blocking Hosts File for Japan",
+            "url": "https://raw.githubusercontent.com/logroid/adaway-hosts/master/hosts.txt",
+            "regex": "^127.0.0.1 (?<target>.*\\..*)$"
+        },
+        {
+            "name": "AdGuard DNS filter",
+            "url": "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/JapaneseFilter/sections/adservers.txt",
+            "regex": "^(\\|\\||\\*)(?<target>.*\\..*)\\^(\\$all|\\$third\\-party|\\$document)?$"
+        }
+    ],
+    "allow": [
+        {
+            "name": "",
+            "url": "",
+            "regex": ""
+        }
+    ]
+}
