@@ -18,7 +18,7 @@ jobs:
 
       - name: Run PrevDNS
         env:
-          cf-zt-identifier: ${{ secrets.cf-zt-identifier }}
-          cf-zt-auth-token: ${{ secrets.cf-zt-auth-token }}
-          cf-zt-rule-identity-expression: ${{ secrets.cf-zt-rule-identity-expression }}
+          cf-zt-identifier: ${{ secrets.CLOUDFLARE_ZEROTRUST_IDENTIFIER }}
+          cf-zt-auth-token: ${{ secrets.CLOUDFLARE_ZEROTRUST_AUTH_TOKEN }}
+          cf-zt-rule-identity-expression: ${{ secrets.CLOUDFLARE_ZEROTRUST_RULE_IDENTITY_EXPRESSION }}
         run: deno run --allow-env --allow-net --allow-read ./main.ts
